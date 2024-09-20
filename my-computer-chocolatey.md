@@ -1,15 +1,12 @@
+![Alt Text](ss.SSH.Key.png)
+![Alt Text](ss.SSH.Key2.png)  
+
+
+
+
+
 Start Powershell with Administrator rights (Run as Administrator)
-    If you already have choco installed in your device, run the following command in your powershell 
 
-!!! danger "This will remove chocolatey from your computer! For re-installing only!"
-    ```powershell title="Powershell as Administrator"
-    rm -Path "C:\ProgramData\chocolatey" -Recurse -Force
-    rm -Path "C:\ProgramData\ChocolateyHttpCache" -Recurse -Force
-    ```
-**Lets understand what you did with above command:** 
-
-- `#!powershell rm`: It deletes files or directories in this case it deletes the chocolatey directory.
-- `#!powershell -erroraction 'silentlycontinue'`: This part of the command tells PowerShell to continue executing the script without displaying an error message if the removal encounters an error (e.g., if the directory doesn't exist).
 
 **Run the following command in Powershell to install CHOCOLATEY**
 
@@ -30,7 +27,7 @@ After successfully installing the Chocolatey package manager, you can use it to 
 ```powershell
 choco install powershell-core git vscode putty greenshot notepadplusplus winscp 7zip paint.net windirstat zoom sudo vmrc vmware-horizon-client github-desktop obs-studio docker-desktop google-drive-file-stream googlechrome curl powertoys signal spotify discord -y
 
-
+```
 
 
 ![Alt Text](ss.hostname.png) 
